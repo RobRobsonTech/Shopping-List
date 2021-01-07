@@ -1,2 +1,2 @@
 # Shopping-List
-Small shopping list project. HTML, CSS, JavaScript.
+Shopping list project. HTML, CSS, JavaScript.
