@@ -1,0 +1,189 @@
+html {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+}
+
+body {
+	margin: auto 0;
+}
+
+#overlay {
+	position: fixed;
+	top: 30%;
+	left: 10%;
+	background: white;
+	border: 1px solid #474747;
+	border-radius: 8px;
+	width: 80%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	z-index: 10;
+	display: none;
+	text-align: center;
+}
+
+#overlay-back {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	z-index: 5;
+	display: none;
+}
+
+#editInput {
+	max-width: 80%;
+	min-width: 20%;
+	max-height: 75px;
+	width: 80%;
+	margin-bottom: 2%;
+}
+
+.centerTitle {
+	text-align: center;
+	font-size: 40px;
+}
+
+.done {
+	text-decoration: line-through;
+}
+
+li {
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 0.5em 1em;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	background-color: lightsteelblue;
+	flex-wrap: nowrap;
+	border: 1px solid black;
+}
+
+li:hover {
+	background-color: rgb(189, 211, 219);
+}
+
+input,
+button {
+	padding: 0.5em;
+	font-family: inherit;
+}
+
+ul {
+	padding-left: 0px;
+	width: 100%;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+
+#inputSection {
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+
+span {
+	word-break: break-word;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 2.5em;
+	margin-right: 1.5em;
+	text-align: center;
+	width: 100%;
+}
+
+#inputBox {
+	display: flex;
+}
+
+#userInput {
+	flex-grow: 100;
+	margin-right: 10px;
+}
+
+.my-handle {
+	cursor: move;
+	cursor: -webkit-grabbing;
+}
+
+.drag-container {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background: white;
+	border-right: 1px solid black;
+	padding: 1em 1em;
+	margin: -0.5em -1em;
+	display: flex;
+	align-items: center;
+}
+
+.trash-container {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: white;
+	border-left: 1px solid black;
+	padding: 1em 1em;
+	margin: -0.5em -1em;
+	display: flex;
+	align-items: center;
+}
+
+.edit-container {
+	background: white;
+	border-left: 1px solid black;
+	padding: 1em 1em;
+	margin: -0.5em 1em;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+
+.edit-container:hover .edit {
+	color: sandybrown;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+
+.trash-container:hover .delete {
+	color: firebrick;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+
+.complete {
+	background: lightgreen;
+}
+
+.complete:hover {
+	background: rgb(178, 252, 178);
+}
+
+.delete {
+	align-self: center;
+	height: 25px;
+	width: auto;
+	font-size: 20px;
+}
+
+.edit {
+	align-self: center;
+	height: 25px;
+	width: auto;
+	font-size: 20px;
+}

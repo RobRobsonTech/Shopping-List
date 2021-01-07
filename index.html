@@ -1,0 +1,140 @@
+<!-- TODO: Potential Improvements -->
+<!-- Number elements -->
+<!-- Create sections (For example, priorities, optional, extras, treats, etc) These should be completely customisable, change colour and text. Perhaps these are grouped into seperate coloured sections -->
+<!-- Add an undo button to either bring back a list element, or reverse your decision to check an item! Could be an array of all actions which can be reversed? undo pop-up box after deleting -->
+<!-- Quantity Button -->
+<!-- Improve UI - Maybe a dark mode! -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shopping List</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+
+		<!-- Font Awesome Icons -->
+		<script
+			src="https://kit.fontawesome.com/cb7bced706.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Sortable JS -->
+		<script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+	</head>
+	<body>
+		<div id="overlay-back"></div>
+		<div id="overlay">
+			<div>
+				<textarea
+					id="editInput"
+					type="text"
+					placeholder="Update item..."
+					maxlength="200"
+				></textarea>
+			</div>
+			<div>
+				<button id="editConfirm">Confirm</button>
+				<button id="editCancel">Cancel</button>
+			</div>
+		</div>
+		<header>
+			<div class="card">
+				<h1 class="centerTitle">Shopping List</h1>
+			</div>
+		</header>
+		<div id="inputSection">
+			<p id="first">What do you want to buy this time?</p>
+			<div id="inputBox">
+				<input
+					id="userInput"
+					type="text"
+					placeholder="Enter items..."
+					maxlength="200"
+				/>
+				<button id="enter">Enter</button>
+			</div>
+		</div>
+		<div class="container">
+			<ul id="listWithHandle">
+				<li class="bold red" random="23">
+					<div class="drag-container my-handle">
+						<img src="grip-vertical.svg" alt="" />
+					</div>
+					<span id="span_1"> Bread </span>
+					<div class="edit-container" onclick="editText(1)">
+						<div class="edit fas fa-edit"></div>
+					</div>
+					<div class="trash-container">
+						<div class="delete fas fa-trash"></div>
+					</div>
+				</li>
+				<li>
+					<div class="drag-container my-handle">
+						<img src="grip-vertical.svg" alt="" />
+					</div>
+					<span id="span_2"> Butter </span>
+					<div class="edit-container" onclick="editText(2)">
+						<div class="edit fas fa-edit"></div>
+					</div>
+					<div class="trash-container">
+						<div class="delete fas fa-trash"></div>
+					</div>
+				</li>
+				<li>
+					<div class="drag-container my-handle">
+						<img src="grip-vertical.svg" alt="" />
+					</div>
+					<span id="span_3"> Jam </span>
+					<div class="edit-container" onclick="editText(3)">
+						<div class="edit fas fa-edit"></div>
+					</div>
+					<div class="trash-container">
+						<div class="delete fas fa-trash"></div>
+					</div>
+				</li>
+				<li>
+					<div class="drag-container my-handle">
+						<img src="grip-vertical.svg" alt="" />
+					</div>
+					<span id="span_4"> Pasta </span>
+					<div class="edit-container" onclick="editText(4)">
+						<div class="edit fas fa-edit"></div>
+					</div>
+					<div class="trash-container">
+						<div class="delete fas fa-trash"></div>
+					</div>
+				</li>
+				<li>
+					<div class="drag-container my-handle">
+						<img src="grip-vertical.svg" alt="" />
+					</div>
+					<span id="span_5"> Rice </span>
+					<div class="edit-container" onclick="editText(5)">
+						<div class="edit fas fa-edit"></div>
+					</div>
+					<div class="trash-container">
+						<div class="delete fas fa-trash"></div>
+					</div>
+				</li>
+				<li>
+					<div class="drag-container my-handle">
+						<img src="grip-vertical.svg" alt="" />
+					</div>
+					<span id="span_6">
+						This is an item that is really long and spans over two
+						lines! This is an item that is really long and spans
+						over two lines! This is an item that is really long and
+						spans over two lines!
+					</span>
+					<div class="edit-container" onclick="editText(6)">
+						<div class="edit fas fa-edit"></div>
+					</div>
+					<div class="trash-container">
+						<div class="delete fas fa-trash"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="Sortable.js"></script>
+	</body>
+</html>
